@@ -1,0 +1,58 @@
+{
+    "quest_001": {
+        "name": "Ant Annihilation",
+        "description": "Ants are causing trouble in the farmland. Get rid of them!",
+        "objective": {
+            "type": "kill",
+            "target": "ant",
+            "count": 2
+        },
+        "start_dialogue": "Please help us with the ant problem.",
+        "end_dialogue": "Thank you for dealing with those pesky ants!",
+        "npc_name": "Farmer Joe",
+        "npc_id": "npc5678",
+        "experience": 150,
+        "prizes": [
+            {
+                "item_id": "item001",
+                "quantity": 1
+            },
+            {
+                "item_id": "item002",
+                "quantity": 5
+            }
+        ],
+        "prerequisite_quests": ["q1223"],
+        "follow_up_quests": ["q1235"],
+        "location": "Farmland"
+    },
+    
+    "quest_002": {
+        "name": "Bounty of the Bandit",
+        "description": "A notorious bandit named Dusty Dagger Dan has been causing trouble in the wasteland, attacking caravans and stealing supplies. The Wasteland Headhunter has put a bounty on his head. Track him down and put an end to his reign of terror.",
+        "objective": {
+            "type": "kill",
+            "target": "Dusty_Dagger_Dan",
+            "count": 1
+        },
+        "start_dialogue": "Dusty Dagger Dan has been a thorn in our side for too long. I've got a hefty sum waiting for the one who takes him out.",
+        "end_dialogue": "The wasteland is a little safer thanks to you. Here's your reward, bounty hunter.",
+        "npc_name": "Wasteland Headhunter",
+        "npc_id": "npc8000",
+        "experience": 250,
+        "prizes": [
+            {
+                "item_id": "item005",
+                "quantity": 1
+            },
+            {
+                "item_id": "item006",
+                "quantity": 5
+            }
+        ],
+        "prerequisite_quests": ["quest_002"],
+        "follow_up_quests": [],
+        "location": "Farmland"
+    }
+    
+}

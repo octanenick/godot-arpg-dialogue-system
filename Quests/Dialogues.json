@@ -1,0 +1,42 @@
+{
+    "dialogues": [
+        {
+            "id": "dialogue_001",
+            "npc_name": "Farmer John",
+            "portrait": "res://textures/NPC/farmer-john.png",
+            "quest_id": "quest_001",
+            "text": {
+                "available": "Traveler, these blasted ants have been a thorn in our side for too long. We've been scratchin' and scrapin' to get these corn crops goin' in this unforgiving desert. But every time they sprout, them radioactive ants come nibblin'. Without the corn, we ain't got much to hope for. Look, if you help us chase those critters off, I got somethin' tucked away for ya, a little token for your troubles. Whatcha think?",
+                "active": "You're still on the job, huh? Those ants won't chase themselves off, you know!",
+                "completed": "You've done it, traveler! Those ants won't be bothering us anymore. Here's your reward, as promised."
+            },
+            "type": "quest_offer",
+            "response": {
+                "available": {
+                    "accept": {
+                        "text": "Accept",
+                        "action": "start_quest",
+                        "parameter": "quest_001"
+                    },
+                    "decline": {
+                        "text": "Decline",
+                        "action": "close_dialogue"
+                    }
+                },
+                "active": {
+                    "accept": {
+                        "text": "Got it, I'm on it.",
+                        "action": "close_dialogue"
+                    }
+                },
+                "completed": {
+                    "accept": {
+                        "text": "Thank you!",
+                        "action": "accept_reward",
+                        "parameter": "quest_001"
+                    }
+                }
+            }
+        }
+    ]
+}
